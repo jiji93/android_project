@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="368dp"
+        android:layout_height="495dp"
+        android:backgroundTint="@android:color/holo_blue_bright"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="16dp">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="11dp"
+            android:text="Scanner les porduits que vous souhaiter acheter"
+            android:textAlignment="center"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/scanner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/textView"
+            android:layout_marginLeft="55dp"
+            android:layout_marginStart="55dp"
+            android:layout_marginTop="14dp"
+            android:text="SCANNER"/>
+
+        <Button
+            android:id="@+id/ajouter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/scanner"
+            android:layout_marginEnd="62dp"
+            android:layout_marginRight="62dp"
+            android:text="AJOUTER"/>
+
+        <TextView
+            android:id="@+id/info"
+            android:layout_width="match_parent"
+            android:layout_height="23dp"
+            android:layout_alignLeft="@+id/textView5"
+            android:layout_alignStart="@+id/textView5"
+            android:layout_below="@+id/scanner"
+            android:text="Je-- rempli m--0--n panier"
+            android:textSize="18sp"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/valider"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginEnd="29dp"
+            android:layout_marginRight="29dp"
+            android:background="@android:color/holo_green_light"
+            android:text="VALIDER" />
+
+        <ListView
+            android:id="@+id/listeView"
+            android:layout_width="match_parent"
+            android:layout_height="230dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/info"
+            android:layout_marginTop="23dp"
+            android:background="@android:color/holo_blue_bright"
+            android:choiceMode="multipleChoice" />
+
+        <TextView
+            android:id="@+id/textviewtotal"
+            android:layout_width="130dp"
+            android:layout_height="35dp"
+            android:layout_above="@+id/valider"
+            android:layout_alignLeft="@+id/scanner"
+            android:layout_alignStart="@+id/scanner"
+            android:layout_toLeftOf="@+id/ajouter"
+            android:layout_toStartOf="@+id/ajouter"
+            android:textColor="@android:color/background_dark"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="60dp"
+            android:layout_height="35dp"
+            android:layout_alignBaseline="@+id/textviewtotal"
+            android:layout_alignBottom="@+id/textviewtotal"
+            android:layout_toLeftOf="@+id/textviewtotal"
+            android:layout_toStartOf="@+id/textviewtotal"
+            android:text="Total"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/valider"
+            android:layout_alignRight="@+id/valider"
+            android:layout_below="@+id/info"
+            android:text="Mon Panier"
+            android:textColor="@android:color/holo_blue_light" />
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>

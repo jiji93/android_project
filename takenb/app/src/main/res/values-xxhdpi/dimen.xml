@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="size_text">24dp</dimen>
+    <dimen name="button_size">12dp</dimen>
+    <dimen name="button_width">70dp</dimen>
+    <dimen name="button_height">70dp</dimen>
+    <dimen name="image_size_width">383dp</dimen>
+    <dimen name="image_size_height">264dp</dimen>
+    <dimen name="button_margin_end">40dp</dimen>
+    <dimen name="button_margin_start">32dp</dimen>
+    <dimen name="button_margin_top">44dp</dimen>
+</resources>

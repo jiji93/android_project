@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/blc"
+    tools:context="com.example.jihadbensassi.takenb.MainActivity">
+
+
+    <TextView
+        android:id="@+id/bar_code_id_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="@string/Bar"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/button_start_shopping"
+        android:layout_width="@dimen/button_width"
+        android:layout_height="@dimen/button_height"
+        android:layout_marginStart="@dimen/button_margin_end"
+        android:layout_marginTop="8dp"
+        android:layout_toLeftOf="@+id/Amis_en_ligne"
+        android:layout_toStartOf="@+id/Amis_en_ligne"
+        android:background="@drawable/button"
+        android:text="Shopping"
+        android:textColor="#D1B606"
+        android:textSize="@dimen/button_size"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView6" />
+
+    <Button
+        android:id="@+id/Suivi"
+        android:layout_width="@dimen/button_width"
+        android:layout_height="@dimen/button_height"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="@dimen/button_margin_start"
+        android:background="@drawable/button"
+        android:text="Suivi"
+        android:textColor="#D1B606"
+        android:textSize="@dimen/button_size"
+        app:layout_constraintBottom_toBottomOf="@+id/button_start_shopping"
+        app:layout_constraintStart_toEndOf="@+id/button_start_shopping" />
+
+    <Button
+        android:id="@+id/Avis"
+        android:layout_width="@dimen/button_width"
+        android:layout_height="@dimen/button_height"
+        android:layout_alignBottom="@+id/Suivi"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginEnd="@dimen/button_margin_end"
+        android:layout_marginStart="@dimen/button_margin_start"
+        android:background="@drawable/button"
+        android:text="Avis"
+        android:textColor="#D1B606"
+        android:textSize="@dimen/button_size"
+        app:layout_constraintBottom_toBottomOf="@+id/Suivi"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/Suivi" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="@dimen/image_size_width"
+        android:layout_height="@dimen/image_size_height"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/banniere"
+        tools:layout_editor_absoluteY="-55dp" />
+
+    <Button
+        android:id="@+id/Amis_en_ligne"
+        android:layout_width="@dimen/button_width"
+        android:layout_height="@dimen/button_height"
+        android:layout_marginStart="@dimen/button_margin_end"
+        android:layout_marginTop="@dimen/button_margin_top"
+        android:background="@drawable/button"
+        android:text="Amis"
+        android:textColor="#D1B606"
+        android:textSize="@dimen/button_size"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_start_shopping" />
+
+    <Button
+        android:id="@+id/Revenus"
+        android:layout_width="@dimen/button_width"
+        android:layout_height="@dimen/button_height"
+        android:layout_marginStart="@dimen/button_margin_start"
+        android:background="@drawable/button"
+        android:text="Revenus"
+        android:textColor="#D1B606"
+        android:textSize="@dimen/button_size"
+        app:layout_constraintBottom_toBottomOf="@+id/Amis_en_ligne"
+        app:layout_constraintStart_toEndOf="@+id/Amis_en_ligne" />
+
+    <Button
+        android:id="@+id/Mes_envie"
+        android:layout_width="@dimen/button_width"
+        android:layout_height="@dimen/button_height"
+        android:layout_marginEnd="@dimen/button_margin_end"
+        android:layout_marginStart="@dimen/button_margin_start"
+        android:background="@drawable/button"
+        android:text="Envie"
+        android:textColor="#D1B606"
+        android:textSize="@dimen/button_size"
+        app:layout_constraintBottom_toBottomOf="@+id/Revenus"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/Revenus" />
+
+    <TextView
+        android:id="@+id/utilisateur"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="122dp"
+        android:text=""
+        android:textColor="#D1B606"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="@+id/imageView6"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView6" />
+
+
+</android.support.constraint.ConstraintLayout>

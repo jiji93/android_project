@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/button_compte"
+        android:title="Crée un compte"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/button_connexion"
+        android:title="Connexion"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/information"
+        android:title="Information compte"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/historique"
+        android:title="Historique"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/déconnexion"
+        android:title="@string/déconnexion"
+        app:showAsAction="never" />
+
+</menu>
