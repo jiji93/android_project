@@ -76,12 +76,16 @@ class Panier : AppCompatActivity() {
 
         btn_ajouter.setOnClickListener {
             val value = textView_barcode.getText().toString().split("--".toRegex()).dropLastWhile({ it.isEmpty() }).toTypedArray()
-            itemliste.add(textView_barcode.text.toString())
-            ajoute(value)
-            total_somme = total_somme + value[2].toFloat()
-            total_prix.text = total_somme.toString()
-            rv_panier.layoutManager = LinearLayoutManager(this,
-                    LinearLayoutManager.VERTICAL, false)
+            if(value.lastIndex == 2) {
+                itemliste.add(textView_barcode.text.toString())
+                ajoute(value)
+                total_somme = total_somme + value[2].toFloat()
+                total_prix.text = total_somme.toString()
+                rv_panier.layoutManager = LinearLayoutManager(this,
+                        LinearLayoutManager.VERTICAL, false)
+            }
+            else
+                toast("Impossible de récupérer le produit : notation du QR non reconnue ")
         }
         btn_scan.setOnClickListener {
             val intent = Intent(this, ScannerViewActivity::class.java)

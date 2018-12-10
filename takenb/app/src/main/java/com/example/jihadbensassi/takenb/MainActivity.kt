@@ -152,7 +152,6 @@ class MainActivity : AppCompatActivity() {
                                         AJOUTER_CODEPOSTAL)
                                 ?: false
 
-                        toast("$val_adresse")
                         myDataBase.use {
                             insert(MyDataBase.TABLE_INFO_COMPTE,
                                     MyDataBase.COLUMN_INFO_NOM to val_nom,
